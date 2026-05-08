@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+.env
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Model weights & checkpoints (large files)
+*.pth
+*.pt
+*.h5
+*.keras
+checkpoints/
+saved_models/
+
+# Dataset (don't push raw data to GitHub)
+data/
+datasets/
+*.zip
+*.tar.gz
+
+# Logs
+logs/
+*.log
+runs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
