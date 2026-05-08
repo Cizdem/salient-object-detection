@@ -16,14 +16,38 @@ This project was built as part of **Cohort V — Project #3: End-to-End ML/DL Pr
 
 ```
 salient-object-detection/
-├── data_loader.py          # Dataset loading, preprocessing, and augmentation
-├── sod_model.py            # CNN encoder-decoder architecture (built from scratch)
-├── train.py                # Training and validation loop with logging
-├── evaluate.py             # Evaluation metrics and visualization
-├── demo_notebook.ipynb     # Interactive demo — upload image, get saliency mask
-├── requirements.txt        # Python dependencies
+├── data_loader.py              # Dataset loading, preprocessing, augmentation
+├── sod_model.py                # CNN encoder-decoder architecture (from scratch)
+├── train.py                    # Training and validation loop with logging
+├── evaluate.py                 # Evaluation metrics and visualization
+├── demo.ipynb                  # Interactive demo — upload image, get saliency mask
+├── demo_local.py               # Local demo script
+├── Project_Report.pdf          # Full project report
+├── requirements.txt            # Python dependencies
 ├── .gitignore
-└── README.md
+├── README.md
+│
+├── results/
+│   ├── metrics.json            # Final evaluation metrics
+│   ├── prediction_grid.png     # Visual grid of predictions
+│   ├── pr_curve.png            # Precision-Recall curve
+│   ├── training_curves.png     # Loss/metric curves over epochs
+│   └── baseline/
+│       ├── metrics.json        # Baseline evaluation metrics
+│       ├── prediction_grid.png # Baseline prediction grid
+│       └── pr_curve.png        # Baseline Precision-Recall curve
+│
+└── runs/
+    ├── baseline/
+    │   ├── best_model.pth      # Best baseline model weights
+    │   ├── checkpoint_latest.pth
+    │   ├── config.json         # Training configuration
+    │   └── training_log.csv    # Per-epoch loss and metrics
+    └── improved/
+        ├── best_model.pth      # Best improved model weights
+        ├── checkpoint_latest.pth
+        ├── config.json
+        └── training_log.csv
 ```
 
 ---
